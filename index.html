@@ -1,120 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-      <title>Document</title>
-      <link rel="stylesheet" href="style.css">
+    <title>Scott Jones - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
   </head>
   <body>
-      <section id="home">
-        <header>
-          Unit Conversions
-        </header>
-        <nav>
-          <div class="topdiv">
-            <a href="#temperature"><button  class="topmenu">Temperature</button></a>
-            <a href="#weight"><button  class="topmenu">Weight</button></a>
-            <a href="#distance"><button  class="topmenu">Distance</button></a>
-          </div>
-        </nav>
-      </section>    
-      <div style="clear:both;"></div>
-     
-      <div id="all-conversion-sections">
-
-        <section id="temperature"  class="b temperature">
-          <div id="tmp">
-            <figure>
-              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="150px"/>
-              <figcaption>Celcius to Farenheit Conversion</figcaption>
-            </figure>
-            <article> 
-
-              <fieldset>
-                <legend>Temperature</legend>
-                <label for="Temperature">Celsius</label> <br/>
-
- <input type="number" id="c"> <br/>
-
-                <button id="temperature"> Convert </button> <br/>
-
-                <input type="number" id="f"> <br/>
-
- <label for="Temperature">Fahrenheit</label>
-              </fieldset>
-              <aside>
-                To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
-              </aside>
-            </article>
-          </div>
-        </section>
-
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Scott Jones
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
         <div style="clear:both;"></div>
-      
-        <section id="weight"  class="b weight">          
-          <div id="wgt">
-            <figure>
-              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png"  width="150px"/>
-              <figcaption>Kilograms to Pound Conversion</figcaption>
-            </figure>
-            <article>
-              <fieldset>
-                <legend>Weight</legend>
-                <label for="Weight">KG</label> <br/>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
 
- <input type="number"> <br/>
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
 
-                <button id="weight"> Convert </button>  <br/>
+        </div>
+      </div>    
+    </nav>
 
- 
-                <input type="number">  <br/>
-
-  <label for="Weight">Pounds</label>    
-              </fieldset>
-              <aside>
-                To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
-              </aside>      
-            </article>
-          </div>
-        </section>
-
-        <div style="clear:both;"></div>
-
-        <section id="distance"  class="b distance">
-          <div id="dst">
-            <figure>
-              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png"  width="150px"/>
-              <figcaption>Kilometers to Miles Conversion</figcaption>
-            </figure>
-            <article>
-              <fieldset>
-                <legend>Distance</legend>
-                  <label for="Distance">KM</label> <br/>
-
- <input type="number">  <br/>
-
-                  <button id="distance"> Convert </button> <br/>
-
-                  <input type="number">  <br/>
-
-  <label for="Distance">Miles</label>
-              </fieldset>
-              <aside>
-                To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609
-              </aside>
-    
-            </article>
-          </div>
-        </section>
-        <div style="clear:both;"></div>
-
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Code_Monkey.jpg" class="profile_image"/>
       </div>
 
-    <div id="go-home" class="iconbutton">
+      <div>
+          <h1>
+            Hi, I'm Scott Jones! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I'm a stellar code wrangler, wrangling both the inner workings and flashy exteriors of programs for these past two rotations around the binary star. 
+            My expertise lies in beaming these programs into colossal data vaults that'd make a Borg cube blush.  
+            Furthermore, I'm a right chum of the enigmatic "Big Blue" and its fantastical mind-reading gizmos, having tinkered with its chatty robots, word-unscrambling contraptions, and even its mood-detecting doohickeys!
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node</h6>
+            <p>2 years experience</p>
+        </div> 
+
+        <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>3 years experience</p>
+        </div> 
+
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>1 year experience</p>
+        </div> 
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Hypercube Visualizer</h3>
+            <ul>
+              <li>Designed a machine learning-augmented tensor analysis framework for real-time rendering of n-dimensional data streams in a pseudo-Euclidean holographic projection.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Q-Chain Protocol</h3>
+            <ul>
+              <li>Implemented a blockchain communication protocol utilizing entanglement-based quantum key distribution for provably secure transmission across non-deterministic channels.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Social Synapse</h3>
+            <ul>
+              <li>Built an AI-powered social listening platform with real-time NLP sentiment analysis, topic modeling, and social network graph analysis for comprehensive brand reputation assessment and strategic engagement optimization.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Scott exhibits exceptional cognitive assimilation proficiency, demonstrating a rapid internalization of core web development constructs.  Furthermore, his collaborative spirit and positive psychological orientation foster an optimal group dynamic.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Scott boasts an accelerated neural learning curve, achieving a swift comprehension of web development fundamentals.  His collaborative efficacy and exemplary emotional quotient contribute to a high-functioning team synergy.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Driven by an epistemological imperative, Scott consistently formulates high-value inquiries.  Exhibiting a proactive disposition within the group construct, he possesses the potential for future leadership roles within a designated delegation framework.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
       <a href="#home">
-        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 23" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
       </a>
     </div>
 
-    <footer>Learn more about HTML and CSS as a part of IBM Fullstack Cloud Developer Certification</footer>
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for the recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
   </body>
 </html>
